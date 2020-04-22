@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Hello World!" />
+
+    <Button
+        android:id="@+id/btn_thread"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="通过子线程更改UI" />
+    <Button
+        android:id="@+id/btn_handler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击Handler更换UI" />
+    <Button
+        android:id="@+id/btn_timerTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="通过Timer+TimerTask + runOnUiThread 更新UI"/>
+
+    <Button
+        android:id="@+id/btn_asy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="通过ASyncTask更改UI"/>
+</LinearLayout>
